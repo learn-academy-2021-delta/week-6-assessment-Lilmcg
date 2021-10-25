@@ -24,6 +24,13 @@ var people = [
 ]
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
 
+// Create a function personCap that takes in an array
+// Iterate over each object key:value pair using map
+// Split into an array and map over that new newArray
+// Locate character  at index 0 and make it uppercase
+// Substring of the word needs to be joined with capitalized character
+  // Return string interpolation to create the sentence
+
 describe ("personCap", () => {
   test("given an array of objects return an array with a sentence about each person with their name capitalized", () => {
     expect(personCap(people)).toEqual(["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."])
@@ -52,6 +59,13 @@ var hodgepodge1 = [23, "Heyyyy!", 45, -10, 0, "Yo", false]
 // Expected output: [ 2, 0, -1, 0 ]
 var hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
 // Expected output: [ 2, 1, -1 ]
+
+
+// Create function onlyNumbers that takes in an array
+// Create an empty array called divideThree
+// Create a newArray and filter through array looking for only a typeof value that is a number
+// Loop through new array and modulo % 3 each index and push that number into empty array divideThree
+  // Return the new divideThree array
 
 describe ("onlyNumbers", () => {
   test("given a mixed array return an array of only the remainders of the number when divided by 3", () => {
@@ -86,6 +100,12 @@ var cubeAndSum1 = [2, 3, 4]
 // Expected output: 99
 var cubeAndSum2 = [0, 5, 10]
 // Expected output: 1125
+
+// Create a function sumofCubes that takes in an newArray
+// Create a holding place/anchor sumNum for the future sum of numbers
+// Loop through the array and cube each number at each index
+// Add the cubed numbers to the anchor sumNum
+  // Return the sumNum
 
 describe ("sumOfCubes", () => {
   test("given an array of numbers return the sum of the numbers cubed", () => {
